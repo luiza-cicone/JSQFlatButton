@@ -31,6 +31,11 @@
 @property (strong, nonatomic) UIColor *highlightedBackgroundColor;
 
 /**
+ *  The background color of the button in its highlighted state. The default value is `nil`.
+ */
+@property (strong, nonatomic) UIColor *selectedBackgroundColor;
+
+/**
  *  The background color of the button in its disabled state. The default value is `nil`.
  */
 @property (strong, nonatomic) UIColor *disabledBackgroundColor;
@@ -51,6 +56,11 @@
 @property (strong, nonatomic) UIColor *highlightedForegroundColor;
 
 /**
+ *  The foreground color (the text color and image mask color) of the button in its selected state. The default value is `nil`.
+ */
+@property (strong, nonatomic) UIColor *selectedForegroundColor;
+
+/**
  *  The foreground color (the text color and image mask color) of the button in its disabled state. The default value is `nil`.
  */
 @property (strong, nonatomic) UIColor *disabledForegroundColor;
@@ -69,6 +79,11 @@
  *  The border color of the button in its hightlighted state. The default value is `nil`.
  */
 @property (strong, nonatomic) UIColor *highlightedBorderColor;
+
+/**
+ *  The border color of the button in its selected state. The default value is `nil`.
+ */
+@property (strong, nonatomic) UIColor *selectedBorderColor;
 
 /**
  *  The border color of the button in its disabled state. The default value is `nil`.
