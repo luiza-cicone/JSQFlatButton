@@ -205,9 +205,9 @@ static CGFloat const kJSQColorAlphaDisabled = 0.75f;
 - (void)setSelected:(BOOL)selected
 {
     [super setSelected:selected];
-    self.backgroundColor = selected ? self.highlightedBackgroundColor : self.normalBackgroundColor;
-    self.tintColor = selected ? self.highlightedForegroundColor : self.normalForegroundColor;
-    self.layer.borderColor = selected ? self.highlightedBorderColor.CGColor : self.normalBorderColor.CGColor;
+    self.backgroundColor = selected ? self.selectedBackgroundColor : self.normalBackgroundColor;
+    self.tintColor = selected ? self.selectedForegroundColor : self.normalForegroundColor;
+    self.layer.borderColor = selected ? self.selectedBorderColor.CGColor : self.normalBorderColor.CGColor;
     [self setNeedsDisplay];
 }
 
