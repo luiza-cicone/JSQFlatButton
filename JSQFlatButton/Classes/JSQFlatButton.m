@@ -193,14 +193,18 @@ static CGFloat const kJSQColorAlphaDisabled = 0.75f;
 
 #pragma mark - UIButton
 
-- (void)setHighlighted:(BOOL)highlighted
-{
-    [super setHighlighted:highlighted];
-    self.backgroundColor = highlighted ? self.highlightedBackgroundColor : self.normalBackgroundColor;
-    self.tintColor = highlighted ? self.highlightedForegroundColor : self.normalForegroundColor;
-    self.layer.borderColor = highlighted ? self.highlightedBorderColor.CGColor : self.normalBorderColor.CGColor;
-    [self setNeedsDisplay];
-}
+// TODO :  a voir pour highlighted/selected
+
+//- (void)setHighlighted:(BOOL)highlighted
+//{
+//    if (!self.selected) {
+//        [super setHighlighted:highlighted];
+//        self.backgroundColor = highlighted ? self.highlightedBackgroundColor : self.normalBackgroundColor;
+//        self.tintColor = highlighted ? self.highlightedForegroundColor : self.normalForegroundColor;
+//        self.layer.borderColor = highlighted ? self.highlightedBorderColor.CGColor : self.normalBorderColor.CGColor;
+//        [self setNeedsDisplay];
+//    }
+//}
 
 - (void)setSelected:(BOOL)selected
 {

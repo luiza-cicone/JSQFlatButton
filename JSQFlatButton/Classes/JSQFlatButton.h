@@ -18,7 +18,9 @@
 /**
  *  The background color of the button in its default state. The default value is `nil`. 
  *  
- *  @warning If the current value of highlightedBackgroundColor is `nil`, then setting this property also sets highlightedBackgroundColor to the same color value with a darkened brightness value. 
+ *  @warning If the current value of highlightedBackgroundColor is `nil`, then setting this property also sets highlightedBackgroundColor to the same color value with a darkened brightness value.
+ *
+ *  @warning If the current value of selectedBackgroundColor is `nil`, then setting this property also sets selectedBackgroundColor to the same color value with a darkened brightness value.
  *
  *  @warning If the current value of disabledBackgroundColor is `nil`, then setting this property also sets disabledBackgroundColor to the same color value with a darkened brightness value and alpha value of `0.75f`.
  *
@@ -31,7 +33,7 @@
 @property (strong, nonatomic) UIColor *highlightedBackgroundColor;
 
 /**
- *  The background color of the button in its highlighted state. The default value is `nil`.
+ *  The background color of the button in its selected state. The default value is `nil`.
  */
 @property (strong, nonatomic) UIColor *selectedBackgroundColor;
 
@@ -44,6 +46,8 @@
  *  The foreground color (the text color and image mask color) of the button in its default state. The default value is `nil`.
  *
  *  @warning If the current value of highlightedForegroundColor is `nil`, then setting this property also sets highlightedForegroundColor to the same color value with a lightened brightness value.
+ *
+ *  @warning If the current value of selectedForegroundColor is `nil`, then setting this property also sets selectedForegroundColor to the same color value with a lightened brightness value.
  *
  *  @warning If the current value of disabledForegroundColor is `nil`, then setting this property also sets disabledForegroundColor to the same color value with a lightened brightness value and alpha value of `0.75f`.
  *
@@ -69,6 +73,8 @@
  *  The border color of the button in its default state. The default value is `nil`.
  *
  *  @warning If the current value of highlightedBorderColor is `nil`, then setting this property also sets highlightedBorderColor to the same color value with a lightened brightness value.
+ *
+ *  @warning If the current value of selectedBorderColor is `nil`, then setting this property also sets selectedBorderColor to the same color value with a lightened brightness value.
  *
  *  @warning If the current value of disabledBorderColor is `nil`, then setting this property also sets disabledBorderColor to the same color value with a lightened brightness value and alpha value of `0.75f`.
  *
